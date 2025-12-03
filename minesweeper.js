@@ -1,8 +1,8 @@
 /**
  * minesweeper.js
  *
- * written using p5
  * with help from servo-with-gui index.js by Blair Subbaraman
+ * 7-segment display bold font from https://www.keshikan.net/fonts-e.html
  *
  * Plays a modified version of minesweeper.
  * - same as normal minesweeper:
@@ -21,14 +21,14 @@
  *   r: restart
  *   e: dig
  *   f: flag
- *   WASD or ^<v>: move with WASD or arrow keys
+ *   WASD or arrow keys: move
  * Arduino:
  *   7 buttons on infrared remote:
  *           VOL+
- *       |<<  >||  >>|
+ *      |<<  >||  >>|
  *       v   VOL-  ^
  *   corresponding to:
- *             up
+ *            up
  *     left  down  right
  *     dig   flag  restart
  *
@@ -78,7 +78,7 @@ let imgFlagged;
 let imgBG;            // the border with the HUD sections
 // status faces; mousehold used for "winning" after already losing
 let imgFacePlaying, imgFaceWin, imgFaceLose, imgFaceMouseHold;
-let HUDFont;          // 7 segment display bold font
+let HUDFont;          // 7-segment display bold font
 
 
 /**

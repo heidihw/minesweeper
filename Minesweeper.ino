@@ -7,7 +7,8 @@
  * The IR receiver sends the value received on each relevant
  * button press, and otherwise a continuous stream to indicate
  * that no button was just pressed.
- * The red indicator light blinks when a signal is received.
+ * The red indicator light on the receiver blinks when a signal
+ * is received.
  *
  * The IR receiver is connected to pin 9,
  * receives power through pin 10,
